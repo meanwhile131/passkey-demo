@@ -11,6 +11,7 @@ async function createKey() {
       pubKeyCredParams: [{ type: "public-key", alg: -7 }]
     }
   });
+  console.log(credential);
   document.getElementById("output").innerText += JSON.stringify(credential);
 }
 const button = document.getElementById("createkey");
